@@ -17,6 +17,7 @@ import ServiceDelivery from "./pages/campaigns/ServiceDelivery";
 import ThankYou from "./pages/campaigns/ThankYou";
 import Join from "./pages/Join";
 import Donate from "./pages/Donate";
+import Media from "./pages/Media";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
@@ -49,6 +50,7 @@ const App = () => (
               <Route path="/campaigns/:campaignId/thank-you" element={<ThankYou />} />
               <Route path="/join" element={<Join />} />
               <Route path="/donate" element={<Donate />} />
+              <Route path="/media" element={<Media />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
