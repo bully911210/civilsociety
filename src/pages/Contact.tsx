@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { SEO } from "@/components/SEO";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MessageSquare } from "lucide-react";
 
@@ -33,7 +34,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Contact"
+        description="Get in touch with Civil Society SA for media enquiries, volunteer information or general questions. We're here to help."
+        path="/contact"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="mb-4">Contact Us</h1>
@@ -135,6 +142,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

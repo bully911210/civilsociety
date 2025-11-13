@@ -1,4 +1,5 @@
 import { CampaignCard } from "@/components/CampaignCard";
+import { SEO } from "@/components/SEO";
 import propertyImage from "@/assets/campaigns/property.jpg";
 import safetyImage from "@/assets/campaigns/safety.jpg";
 import nonracialImage from "@/assets/campaigns/nonracial.jpg";
@@ -6,7 +7,13 @@ import serviceImage from "@/assets/campaigns/service.jpg";
 
 const Campaigns = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Campaigns"
+        description="Join our campaigns for property rights, safety & security, non-racialism, and service delivery. Sign petitions and add your voice to the movement."
+        path="/campaigns"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <h1 className="mb-4">Campaigns</h1>
         <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
@@ -46,6 +53,7 @@ const Campaigns = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

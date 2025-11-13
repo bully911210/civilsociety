@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src="/src/assets/logo.png" alt="Civil Society SA" className="h-12" />
+            <img src="/logo.png" alt="Civil Society SA logo" className="h-12" width="180" height="48" />
           </Link>
 
           {/* Desktop Navigation */}

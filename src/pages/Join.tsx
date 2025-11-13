@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
+import { SEO } from "@/components/SEO";
 import { useToast } from "@/hooks/use-toast";
 import { useNavigate } from "react-router-dom";
 import { Users, Mail, MessageSquare } from "lucide-react";
@@ -41,7 +42,13 @@ const Join = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Join"
+        description="Join thousands of South Africans who want accountable governance and functioning services. Sign up for free to receive campaign updates and invitations to events."
+        path="/join"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="mb-4">Join Civil Society SA</h1>
@@ -177,6 +184,7 @@ const Join = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

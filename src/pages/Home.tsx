@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CampaignCard } from "@/components/CampaignCard";
+import { SEO } from "@/components/SEO";
 import { Check } from "lucide-react";
 import heroImage from "@/assets/hero-people-protest.jpg";
 import propertyImage from "@/assets/campaigns/property.jpg";
@@ -10,7 +11,13 @@ import serviceImage from "@/assets/campaigns/service.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Home"
+        description="Civil Society SA is a people-powered movement working for property rights, safety, non-racialism and better service delivery. Join thousands demanding accountability."
+        path="/"
+      />
+      <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center justify-center bg-primary overflow-hidden">
         <div 
@@ -143,6 +150,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

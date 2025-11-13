@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 import { Shield, Users, FileText, Target } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="About"
+        description="Learn about Civil Society SA's mission to strengthen civic accountability by mobilising citizens and pressing for concrete policy and administrative change."
+        path="/about"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="mb-8">About Civil Society SA</h1>
         
@@ -123,6 +130,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
