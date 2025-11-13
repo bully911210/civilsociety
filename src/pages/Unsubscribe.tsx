@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { SEO } from "@/components/SEO";
 import { useToast } from "@/hooks/use-toast";
 
 const Unsubscribe = () => {
@@ -34,7 +35,13 @@ const Unsubscribe = () => {
 
   if (isUnsubscribed) {
     return (
-      <div className="flex flex-col min-h-screen">
+      <>
+        <SEO 
+          title="Unsubscribed"
+          description="You have been successfully unsubscribed from Civil Society SA communications."
+          path="/unsubscribe"
+        />
+        <div className="flex flex-col min-h-screen">
         <div className="container mx-auto px-4 py-16 max-w-2xl text-center">
           <h1 className="mb-4">You've been unsubscribed</h1>
           <div className="bg-card p-8 rounded-lg border border-border">
@@ -50,11 +57,18 @@ const Unsubscribe = () => {
           </div>
         </div>
       </div>
+      </>
     );
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Unsubscribe"
+        description="Unsubscribe from Civil Society SA communications."
+        path="/unsubscribe"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-2xl">
         <h1 className="mb-4">Unsubscribe</h1>
         <p className="text-xl text-muted-foreground mb-8">
@@ -100,6 +114,7 @@ const Unsubscribe = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

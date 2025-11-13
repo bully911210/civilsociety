@@ -1,6 +1,14 @@
+import { SEO } from "@/components/SEO";
+
 const TermsAndConditions = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Terms & Conditions"
+        description="Terms and conditions for using the Civil Society SA website and participating in our campaigns."
+        path="/terms-and-conditions"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="mb-8">Terms & Conditions</h1>
         
@@ -112,6 +120,7 @@ const TermsAndConditions = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

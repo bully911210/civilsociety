@@ -1,6 +1,7 @@
 import { useParams, useLocation, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SocialShare } from "@/components/SocialShare";
+import { SEO } from "@/components/SEO";
 import { CheckCircle } from "lucide-react";
 
 const campaignNames: Record<string, string> = {
@@ -17,7 +18,13 @@ const ThankYou = () => {
   const campaignName = campaignNames[campaignId || ""] || "this campaign";
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title={`Thank You - ${campaignName}`}
+        description={`Thank you for signing the ${campaignName} petition. We've received your support and will include your voice in our tally.`}
+        path={`/campaigns/${campaignId}/thank-you`}
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-3xl">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent mb-6">
@@ -74,6 +81,7 @@ const ThankYou = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
