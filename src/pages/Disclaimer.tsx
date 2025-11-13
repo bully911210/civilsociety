@@ -1,6 +1,14 @@
+import { SEO } from "@/components/SEO";
+
 const Disclaimer = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Disclaimer"
+        description="Disclaimer for Civil Society SA website. Information provided is for civic action and informational purposes only."
+        path="/disclaimer"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="mb-8">Disclaimer</h1>
         
@@ -90,6 +98,7 @@ const Disclaimer = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

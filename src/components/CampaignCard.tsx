@@ -19,6 +19,9 @@ export const CampaignCard = ({ id, title, excerpt, image, imageAlt }: CampaignCa
         <img 
           src={image} 
           alt={imageAlt}
+          width="400"
+          height="300"
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>

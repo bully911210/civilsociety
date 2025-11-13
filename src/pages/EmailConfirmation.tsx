@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 import { Mail, CheckCircle } from "lucide-react";
 
 const EmailConfirmation = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Email Confirmation"
+        description="Thank you for joining Civil Society SA! Please check your email to verify your subscription."
+        path="/email-optin-confirmation"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-2xl text-center">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent mb-6">
           <Mail className="h-10 w-10 text-accent-foreground" />
@@ -39,6 +46,7 @@ const EmailConfirmation = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

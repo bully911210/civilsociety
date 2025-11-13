@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 import { DollarSign, FileText, Users, Scale } from "lucide-react";
 
 const Donate = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Donate"
+        description="Support Civil Society SA's work with donations that fund campaign research, petition delivery, legal reviews and public outreach. We publish annual financial summaries for transparency."
+        path="/donate"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="mb-4">Support our work</h1>
         <p className="text-xl text-muted-foreground mb-12">
@@ -86,6 +93,7 @@ const Donate = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

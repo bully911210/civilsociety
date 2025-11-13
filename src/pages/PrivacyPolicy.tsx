@@ -1,6 +1,14 @@
+import { SEO } from "@/components/SEO";
+
 const PrivacyPolicy = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
+      <SEO 
+        title="Privacy Policy"
+        description="Civil Society SA's Privacy Policy compliant with POPIA. Learn how we process and protect your personal information."
+        path="/privacy-policy"
+      />
+      <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         <h1 className="mb-8">Privacy Policy (POPIA Compliant)</h1>
         
@@ -107,6 +115,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
