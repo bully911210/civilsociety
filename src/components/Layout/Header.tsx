@@ -15,13 +15,16 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Civil Society SA logo" className="h-12" width="180" height="48" />
+            <img src="/logo.png" alt="Civil Society SA logo" className="h-15 w-auto" style={{ height: '60px' }} />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6" aria-label="Main navigation">
             <Link to="/campaigns" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Campaigns
+            </Link>
+            <Link to="/media" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              Media
             </Link>
             <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
@@ -61,6 +64,13 @@ export const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Campaigns
+            </Link>
+            <Link 
+              to="/media" 
+              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Media
             </Link>
             <Link 
               to="/about" 
