@@ -63,7 +63,7 @@ const ThankYou = () => {
             <Link to="/campaigns">Back to Campaigns</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link to="/join">Become a Member</Link>
+            <Link to="/join">Become a Contributor</Link>
           </Button>
         </div>
 

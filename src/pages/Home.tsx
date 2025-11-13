@@ -31,7 +31,7 @@ const Home = () => {
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent-dark font-bold text-lg px-8">
               <Link to="/join">Join the Movement</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold text-lg px-8">
+            <Button asChild size="lg" variant="outline" className="border-2 border-white text-foreground hover:bg-white hover:text-primary font-bold text-lg px-8">
               <Link to="/campaigns">See Campaigns</Link>
             </Button>
           </div>
@@ -130,7 +130,7 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="mb-4 text-accent-foreground">Ready to act?</h2>
           <p className="text-xl mb-8 text-accent-foreground/90 max-w-2xl mx-auto">
-            Sign a petition or join as a member. Together we can demand the accountability South Africa deserves.
+            Sign a petition or join as a contributor. Together we can demand the accountability South Africa deserves.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary-dark font-bold text-lg px-8">
