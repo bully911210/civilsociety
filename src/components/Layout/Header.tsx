@@ -14,8 +14,8 @@ export const Header = () => {
       
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Civil Society SA logo" className="h-15 w-auto" style={{ height: '60px' }} />
+          <Link to="/" className="flex items-center py-3">
+            <img src="/logo.png" alt="Civil Society SA logo" className="h-15 w-auto" style={{ height: '69px' }} />
           </Link>
 
           {/* Desktop Navigation */}
@@ -29,12 +29,6 @@ export const Header = () => {
             <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               About
             </Link>
-            <Link to="/join" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Join
-            </Link>
-            <Link to="/donate" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              Donate
-            </Link>
             <Link to="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
@@ -42,7 +36,7 @@ export const Header = () => {
 
           <div className="flex items-center space-x-4">
             <Button asChild className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent-dark">
-              <Link to="/join">Join the Movement</Link>
+              <Link to="/contribute">Contribute</Link>
             </Button>
 
             <button
@@ -80,20 +74,6 @@ export const Header = () => {
               About
             </Link>
             <Link 
-              to="/join" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Join
-            </Link>
-            <Link 
-              to="/donate" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Donate
-            </Link>
-            <Link 
               to="/contact" 
               className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
               onClick={() => setMobileMenuOpen(false)}
@@ -102,7 +82,7 @@ export const Header = () => {
             </Link>
             <div className="px-4 pt-2">
               <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent-dark">
-                <Link to="/join">Join the Movement</Link>
+                <Link to="/contribute">Contribute</Link>
               </Button>
             </div>
           </nav>
