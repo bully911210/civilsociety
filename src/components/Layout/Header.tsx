@@ -14,8 +14,8 @@ export const Header = () => {
       
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">CSSA</div>
+          <Link to="/" className="flex items-center">
+            <img src="/src/assets/logo.png" alt="Civil Society SA" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}

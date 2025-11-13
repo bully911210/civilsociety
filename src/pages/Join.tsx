@@ -47,7 +47,7 @@ const Join = () => {
           <h1 className="mb-4">Join Civil Society SA</h1>
           <p className="text-xl text-muted-foreground mb-12">
             Join thousands of South Africans who want accountable governance and functioning services. 
-            Membership is free — opt in for email and SMS updates.
+            Contributor registration is free — opt in for email and SMS updates.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
