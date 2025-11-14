@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,77 +14,108 @@ export const Header = () => {
         Skip to content
       </a>
       
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center py-3">
-            <img src="/logo.png" alt="Civil Society SA logo" className="h-15 w-auto" style={{ height: '69px' }} />
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex h-16 items-center justify-between gap-4">
+          <Link to="/" className="flex-shrink-0">
+            <img 
+              src={logo} 
+              alt="Civil Society SA" 
+              className="h-auto w-[110px] md:w-[140px] object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6" aria-label="Main navigation">
-            <Link to="/campaigns" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
+            <NavLink 
+              to="/campaigns" 
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              activeClassName="text-primary font-semibold"
+            >
               Campaigns
-            </Link>
-            <Link to="/media" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            </NavLink>
+            <NavLink 
+              to="/media" 
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              activeClassName="text-primary font-semibold"
+            >
               Media
-            </Link>
-            <Link to="/about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            </NavLink>
+            <NavLink 
+              to="/about" 
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              activeClassName="text-primary font-semibold"
+            >
               About
-            </Link>
-            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            </NavLink>
+            <NavLink 
+              to="/contact" 
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              activeClassName="text-primary font-semibold"
+            >
               Contact
-            </Link>
+            </NavLink>
           </nav>
 
-          <div className="flex items-center space-x-4">
-            <Button asChild className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent-dark">
+          <div className="flex items-center gap-3">
+            <Button asChild size="default" className="hidden md:inline-flex bg-accent text-accent-foreground hover:bg-accent-dark font-semibold">
               <Link to="/contribute">Contribute</Link>
             </Button>
 
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-2 hover:bg-secondary rounded-md transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuOpen}
             >
-              <Menu className="h-6 w-6" />
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden py-4 space-y-2" aria-label="Mobile navigation">
-            <Link 
-              to="/campaigns" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Campaigns
-            </Link>
-            <Link 
-              to="/media" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Media
-            </Link>
-            <Link 
-              to="/about" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link 
-              to="/contact" 
-              className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-secondary rounded"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            <div className="px-4 pt-2">
-              <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent-dark">
-                <Link to="/contribute">Contribute</Link>
+          <nav className="md:hidden py-4 border-t border-border" aria-label="Mobile navigation">
+            <div className="space-y-1">
+              <NavLink 
+                to="/campaigns" 
+                className="block px-3 py-2 text-base font-medium text-foreground hover:bg-secondary rounded-md transition-colors"
+                activeClassName="bg-secondary text-primary font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Campaigns
+              </NavLink>
+              <NavLink 
+                to="/media" 
+                className="block px-3 py-2 text-base font-medium text-foreground hover:bg-secondary rounded-md transition-colors"
+                activeClassName="bg-secondary text-primary font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Media
+              </NavLink>
+              <NavLink 
+                to="/about" 
+                className="block px-3 py-2 text-base font-medium text-foreground hover:bg-secondary rounded-md transition-colors"
+                activeClassName="bg-secondary text-primary font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About
+              </NavLink>
+              <NavLink 
+                to="/contact" 
+                className="block px-3 py-2 text-base font-medium text-foreground hover:bg-secondary rounded-md transition-colors"
+                activeClassName="bg-secondary text-primary font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </NavLink>
+            </div>
+            <div className="mt-4 pt-4 border-t border-border">
+              <Button asChild size="default" className="w-full bg-accent text-accent-foreground hover:bg-accent-dark font-semibold">
+                <Link to="/contribute" onClick={() => setMobileMenuOpen(false)}>Contribute</Link>
               </Button>
             </div>
           </nav>

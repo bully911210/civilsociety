@@ -12,10 +12,10 @@ const About = () => {
         path="/about"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <h1 className="mb-8">About Civil Society SA</h1>
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 max-w-4xl">
+        <h1 className="mb-6 md:mb-8">About Civil Society SA</h1>
         
-        <div className="space-y-12">
+        <div className="space-y-8">
           {/* Mission */}
           <section className="bg-card p-8 rounded-lg border border-border">
             <div className="flex items-start gap-4">
@@ -123,8 +123,8 @@ const About = () => {
           </section>
         </div>
 
-        <div className="mt-12 text-center">
-          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent-dark font-bold">
+        <div className="mt-8 md:mt-12 text-center">
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent-dark font-semibold">
             <Link to="/campaigns">See Our Campaigns</Link>
           </Button>
         </div>

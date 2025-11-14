@@ -4,10 +4,12 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground mt-auto">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+
           <div>
-            <h3 className="font-bold text-lg mb-4">About</h3>
+            <h3 className="font-semibold text-base mb-3">About</h3>
+
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-sm hover:text-accent transition-colors">
@@ -23,7 +25,8 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Support</h3>
+            <h3 className="font-semibold text-base mb-3">Support</h3>
+
             <ul className="space-y-2">
               <li>
                 <Link to="/join" className="text-sm hover:text-accent transition-colors">
@@ -39,7 +42,8 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Legal</h3>
+            <h3 className="font-semibold text-base mb-3">Legal</h3>
+
             <ul className="space-y-2">
               <li>
                 <Link to="/privacy-policy" className="text-sm hover:text-accent transition-colors">
@@ -60,7 +64,8 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-bold text-lg mb-4">Connect</h3>
+            <h3 className="font-semibold text-base mb-3">Connect</h3>
+
             <p className="text-sm mb-4">
               Contact: <a href="mailto:info@civilsocietysa.org.za" className="hover:text-accent transition-colors">info@civilsocietysa.org.za</a>
             </p>
@@ -78,9 +83,10 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-primary-light text-center text-sm">
-          <p>© {new Date().getFullYear()} Civil Society SA. All rights reserved.</p>
+        <div className="mt-10 pt-8 border-t border-primary-light/30 text-center">
+          <p className="text-sm opacity-90">© {new Date().getFullYear()} Civil Society SA. All rights reserved.</p>
         </div>
+
       </div>
     </footer>
   );

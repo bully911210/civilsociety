@@ -13,7 +13,7 @@ export const CampaignCard = ({ id, title, excerpt, image, imageAlt }: CampaignCa
   return (
     <Link 
       to={`/campaigns/${id}`}
-      className="group block bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-all hover:shadow-lg"
+      className="group flex flex-col h-full bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-all hover:shadow-lg"
     >
       <div className="aspect-[4/3] overflow-hidden">
         <img 
@@ -25,14 +25,14 @@ export const CampaignCard = ({ id, title, excerpt, image, imageAlt }: CampaignCa
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
-      <div className="p-6">
+      <div className="flex flex-col flex-1 p-6">
         <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
           {title}
         </h3>
-        <p className="text-muted-foreground mb-4 line-clamp-2">
+        <p className="text-muted-foreground mb-4 line-clamp-2 flex-1">
           {excerpt}
         </p>
-        <div className="flex items-center text-primary font-medium text-sm">
+        <div className="flex items-center text-primary font-semibold text-sm mt-auto">
           <span>Sign the Petition</span>
           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </div>
@@ -40,3 +40,4 @@ export const CampaignCard = ({ id, title, excerpt, image, imageAlt }: CampaignCa
     </Link>
   );
 };
+

@@ -9,8 +9,8 @@ const Disclaimer = () => {
         path="/disclaimer"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <h1 className="mb-8">Disclaimer</h1>
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 max-w-4xl">
+        <h1 className="mb-6 md:mb-8">Disclaimer</h1>
         
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
           <section>

@@ -49,19 +49,19 @@ const Contribute = () => {
         path="/contribute"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         {/* Join Section */}
         <div className="max-w-4xl mx-auto">
           <h1 className="mb-4">Join Civil Society SA</h1>
-          <p className="text-xl text-muted-foreground mb-12">
+          <p className="text-xl text-muted-foreground mb-8 md:mb-12">
             Join thousands of South Africans who want accountable governance and functioning services. 
             Contributor registration is free — opt in for email and SMS updates.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             {/* Form */}
             <div className="lg:col-span-2">
-              <form onSubmit={handleSubmit} className="space-y-6 bg-card p-6 md:p-8 rounded-lg border border-border">
+              <form onSubmit={handleSubmit} className="space-y-5 bg-card p-6 md:p-8 rounded-lg border border-border">
                 <div className="space-y-2">
                   <h2 className="text-2xl font-bold">Sign up for updates</h2>
                   <p className="text-muted-foreground">
@@ -147,7 +147,7 @@ const Contribute = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent-dark font-bold"
+                  className="w-full bg-accent text-accent-foreground hover:bg-accent-dark font-semibold"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Joining..." : "Join the Movement"}

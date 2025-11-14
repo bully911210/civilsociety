@@ -42,7 +42,7 @@ export const CampaignPageLayout = ({
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-primary-dark/95"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 py-16 text-center text-white z-10">
+        <div className="relative container mx-auto px-4 md:px-6 py-16 md:py-20 text-center text-white z-10">
           <h1 className="mb-6 max-w-4xl mx-auto">
             {title}
           </h1>
@@ -52,7 +52,7 @@ export const CampaignPageLayout = ({
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {/* Content */}
           <div className="lg:col-span-2 space-y-8">
