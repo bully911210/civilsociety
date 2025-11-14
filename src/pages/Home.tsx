@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { CampaignCard } from "@/components/CampaignCard";
 import { SEO } from "@/components/SEO";
 import { Check } from "lucide-react";
-import heroImage from "@/assets/hero-people-protest.jpg";
 import propertyImage from "@/assets/campaigns/property.jpg";
 import safetyImage from "@/assets/campaigns/safety.jpg";
 import nonracialImage from "@/assets/campaigns/nonracial.jpg";
@@ -22,7 +21,7 @@ const Home = () => {
       <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-primary overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(/image%20(56).png)` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/80 to-primary-dark/95"></div>
         </div>
