@@ -42,7 +42,7 @@ const Unsubscribe = () => {
           path="/unsubscribe"
         />
         <div className="flex flex-col min-h-screen">
-        <div className="container mx-auto px-4 py-16 max-w-2xl text-center">
+        <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 max-w-2xl text-center">
           <h1 className="mb-4">You've been unsubscribed</h1>
           <div className="bg-card p-8 rounded-lg border border-border">
             <p className="text-lg text-muted-foreground mb-6">
@@ -69,13 +69,13 @@ const Unsubscribe = () => {
         path="/unsubscribe"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16 max-w-2xl">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 max-w-2xl">
         <h1 className="mb-4">Unsubscribe</h1>
         <p className="text-xl text-muted-foreground mb-8">
           We're sorry to see you go. Enter your email address to unsubscribe from our communications.
         </p>
 
-        <form onSubmit={handleSubmit} className="bg-card p-6 md:p-8 rounded-lg border border-border space-y-6">
+        <form onSubmit={handleSubmit} className="bg-card p-6 md:p-8 rounded-lg border border-border space-y-5">
           <div className="space-y-2">
             <Label htmlFor="email">Email Address</Label>
             <Input 

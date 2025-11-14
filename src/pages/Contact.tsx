@@ -41,17 +41,17 @@ const Contact = () => {
         path="/contact"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="mb-4">Contact Us</h1>
-          <p className="text-xl text-muted-foreground mb-12">
+          <p className="text-xl text-muted-foreground mb-8 md:mb-12">
             Get in touch for media enquiries, volunteer information or general questions.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <form onSubmit={handleSubmit} className="space-y-6 bg-card p-6 md:p-8 rounded-lg border border-border">
+              <form onSubmit={handleSubmit} className="space-y-5 bg-card p-6 md:p-8 rounded-lg border border-border">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name *</Label>
                   <Input 
@@ -87,7 +87,7 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-accent text-accent-foreground hover:bg-accent-dark font-bold"
+                  className="w-full bg-accent text-accent-foreground hover:bg-accent-dark font-semibold"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -96,9 +96,9 @@ const Contact = () => {
             </div>
 
             {/* Direct Contacts */}
-            <div className="lg:col-span-1 space-y-6">
+            <div className="lg:col-span-1 space-y-4 md:space-y-6">
               <div className="bg-secondary p-6 rounded-lg">
-                <h3 className="text-lg font-bold mb-4">Direct Contact</h3>
+                <h3 className="text-base font-semibold mb-4">Direct Contact</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0 mt-0.5" />
@@ -131,7 +131,7 @@ const Contact = () => {
               </div>
 
               <div className="bg-card p-6 rounded-lg border border-border">
-                <h3 className="text-lg font-bold mb-2">Office Hours</h3>
+                <h3 className="text-base font-semibold mb-2">Office Hours</h3>
                 <p className="text-sm text-muted-foreground">
                   Monday - Friday<br />
                   9:00 AM - 5:00 PM (SAST)

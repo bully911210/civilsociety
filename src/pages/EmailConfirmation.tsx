@@ -12,7 +12,7 @@ const EmailConfirmation = () => {
         path="/email-optin-confirmation"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16 max-w-2xl text-center">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16 max-w-2xl text-center">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent mb-6">
           <Mail className="h-10 w-10 text-accent-foreground" />
         </div>
@@ -39,8 +39,8 @@ const EmailConfirmation = () => {
           </Button>
         </div>
 
-        <div className="mt-12">
-          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary-dark">
+        <div className="mt-10 md:mt-12">
+          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary-dark font-semibold">
             <Link to="/">Return to Home</Link>
           </Button>
         </div>

@@ -14,14 +14,14 @@ const Campaigns = () => {
         path="/campaigns"
       />
       <div className="flex flex-col min-h-screen">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <h1 className="mb-4">Campaigns</h1>
-        <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
+        <p className="text-xl text-muted-foreground mb-8 md:mb-12 max-w-3xl">
           Click a campaign to read the problem, what we demand, and sign the petition. 
           Your signature adds to the collective voice demanding change.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <CampaignCard 
             id="property-rights"
             title="Property Rights"
