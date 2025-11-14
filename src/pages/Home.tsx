@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { CampaignCard } from "@/components/CampaignCard";
 import { SEO } from "@/components/SEO";
 import { Check } from "lucide-react";
-import propertyImage from "@/assets/campaigns/property.jpg";
-import safetyImage from "@/assets/campaigns/safety.jpg";
-import nonracialImage from "@/assets/campaigns/nonracial.jpg";
-import serviceImage from "@/assets/campaigns/service.jpg";
+import propertyImage from "@/assets/campaigns/property.png";
+import safetyImage from "@/assets/campaigns/safety.png";
+import nonracialImage from "@/assets/campaigns/nonracial.png";
+import serviceImage from "@/assets/campaigns/service.png";
 
 const Home = () => {
   return (

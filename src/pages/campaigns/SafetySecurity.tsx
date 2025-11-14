@@ -1,5 +1,5 @@
 import { CampaignPageLayout } from "@/components/CampaignPageLayout";
-import safetyImage from "@/assets/campaigns/safety.jpg";
+import safetyImage from "@/assets/campaigns/safety.png";
 
 const SafetySecurity = () => {
   return (

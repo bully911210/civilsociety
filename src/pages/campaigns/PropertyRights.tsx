@@ -1,5 +1,5 @@
 import { CampaignPageLayout } from "@/components/CampaignPageLayout";
-import propertyImage from "@/assets/campaigns/property.jpg";
+import propertyImage from "@/assets/campaigns/property.png";
 
 const PropertyRights = () => {
   return (

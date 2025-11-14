@@ -1,5 +1,5 @@
 import { CampaignPageLayout } from "@/components/CampaignPageLayout";
-import nonracialImage from "@/assets/campaigns/nonracial.jpg";
+import nonracialImage from "@/assets/campaigns/nonracial.png";
 
 const NonRacialism = () => {
   return (
