@@ -1,5 +1,5 @@
 import { CampaignPageLayout } from "@/components/CampaignPageLayout";
-import serviceImage from "@/assets/campaigns/service.jpg";
+import serviceImage from "@/assets/campaigns/service.png";
 
 const ServiceDelivery = () => {
   return (
