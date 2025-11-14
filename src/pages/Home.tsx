@@ -21,9 +21,9 @@ const Home = () => {
       <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center bg-primary overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(/image%20(56).png)` }}
+          style={{ backgroundImage: `url(/hero-background.png)` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/80 to-primary-dark/95"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/50 via-primary/50 to-primary-dark/50"></div>
         </div>
         
         <div className="relative container mx-auto px-4 md:px-6 py-16 md:py-20 text-center text-white z-10">
