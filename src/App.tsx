@@ -10,10 +10,10 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Campaigns from "./pages/Campaigns";
-import PropertyRights from "./pages/campaigns/PropertyRights";
-import SafetySecurity from "./pages/campaigns/SafetySecurity";
-import NonRacialism from "./pages/campaigns/NonRacialism";
-import ServiceDelivery from "./pages/campaigns/ServiceDelivery";
+import PrivateSecurity from "./pages/campaigns/PrivateSecurity";
+import SelfDefence from "./pages/campaigns/SelfDefence";
+import TaxCredits from "./pages/campaigns/TaxCredits";
+import CivilSociety from "./pages/campaigns/CivilSociety";
 import ThankYou from "./pages/campaigns/ThankYou";
 import Join from "./pages/Join";
 import Donate from "./pages/Donate";
@@ -44,10 +44,10 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/campaigns" element={<Campaigns />} />
-              <Route path="/campaigns/property-rights" element={<PropertyRights />} />
-              <Route path="/campaigns/safety-security" element={<SafetySecurity />} />
-              <Route path="/campaigns/non-racialism" element={<NonRacialism />} />
-              <Route path="/campaigns/service-delivery" element={<ServiceDelivery />} />
+              <Route path="/campaigns/private-security" element={<PrivateSecurity />} />
+              <Route path="/campaigns/self-defence" element={<SelfDefence />} />
+              <Route path="/campaigns/tax-credits" element={<TaxCredits />} />
+              <Route path="/campaigns/civil-society" element={<CivilSociety />} />
               <Route path="/campaigns/:campaignId/thank-you" element={<ThankYou />} />
               <Route path="/join" element={<Join />} />
               <Route path="/donate" element={<Donate />} />
