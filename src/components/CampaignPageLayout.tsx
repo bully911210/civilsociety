@@ -46,9 +46,6 @@ export const CampaignPageLayout = ({
           <h1 className="mb-6 max-w-4xl mx-auto">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-            {intro}
-          </p>
         </div>
       </section>
 
@@ -56,6 +53,14 @@ export const CampaignPageLayout = ({
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {/* Content */}
           <div className="lg:col-span-2 space-y-8">
+            {intro && (
+              <section>
+                <p className="text-xl leading-relaxed text-foreground">
+                  {intro}
+                </p>
+              </section>
+            )}
+            
             <section>
               <h2 className="text-3xl mb-4">The Problem</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
