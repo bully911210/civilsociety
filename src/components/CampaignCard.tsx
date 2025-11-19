@@ -15,12 +15,12 @@ export const CampaignCard = ({ id, title, excerpt, image, imageAlt }: CampaignCa
       to={`/campaigns/${id}`}
       className="group flex flex-col h-full bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-all hover:shadow-lg"
     >
-      <div className="aspect-[4/3] overflow-hidden">
+      <div className="aspect-square overflow-hidden">
         <img 
           src={image} 
           alt={imageAlt}
           width="400"
-          height="300"
+          height="400"
           loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
