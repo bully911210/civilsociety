@@ -37,7 +37,7 @@ const Contact = () => {
     <>
       <SEO 
         title="Contact"
-        description="Get in touch with Civil Society SA for media enquiries, volunteer information or general questions. We're here to help."
+        description="Contact Civil Society South Africa for partnerships, media enquiries and safety advocacy."
         path="/contact"
       />
       <div className="flex flex-col min-h-screen">
@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="mb-4">Contact Us</h1>
           <p className="text-xl text-muted-foreground mb-8 md:mb-12">
-            Get in touch for media enquiries, volunteer information or general questions.
+            For partnerships, media enquiries and safety advocacy contact Civil Society South Africa.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">

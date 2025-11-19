@@ -5,27 +5,15 @@ const PrivateSecurity = () => {
   return (
     <CampaignPageLayout
       campaignId="private-security"
-      campaignName="Stop the Dangerous Private Security Restrictions"
+      campaignName="Protect Those Who Protect Us"
       heroImage={privateSecurityImage}
-      title="Protect Those Who Protect Us"
-      intro="South Africans face violent crime every day. In many areas, private security is the only real line of defence when SAPS arrives too late, or not at all. Instead of strengthening these frontline protectors, government is proposing regulations that would disarm them where they are needed most."
-      problemStatement="The new Private Security Industry Regulations restrict where officers may carry firearms: estates, schools, malls, public spaces and community patrol zones. These are the very places criminals target with military-grade rifles. The regulations also cap ammunition, limit magazines and ban essential firearms like semi-auto rifles and tactical shotguns. Officers responding to hijackings, armed robberies or farm attacks would be forced to face heavily armed criminals with half-empty pistols. This is not safety regulation. It is dangerous policymaking that puts officers, families and communities at risk."
+      title="Government Wants to Disarm Private Security. Innocent People Will Die."
+      intro="Private security officers respond faster than SAPS and protect millions of people every day. Government's proposed regulations will weaken them by restricting firearms, ammunition, magazines and tactical rifles. Criminals ignore every law. Punishing the law abiding creates victims."
+      problemStatement=""
       demands={[
         {
-          title: "Scrap the firearm restrictions",
-          description: "that limit private security in high-risk areas."
-        },
-        {
-          title: "Allow officers to carry the equipment",
-          description: "required to respond to violent crime."
-        },
-        {
-          title: "Remove magazine and ammunition caps",
-          description: "that put trained professionals at a tactical disadvantage."
-        },
-        {
-          title: "Recognise private security",
-          description: "as an essential part of South Africa's safety network, not a threat to be over-regulated."
+          title: "Stand against",
+          description: "the dangerous new private security regulations."
         }
       ]}
     />
