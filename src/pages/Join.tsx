@@ -45,25 +45,37 @@ const Join = () => {
     <>
       <SEO 
         title="Join & Support"
-        description="Join thousands of South Africans who want accountable governance and functioning services. Sign up for free to receive campaign updates and support our work with donations."
+        description="Join the growing safety net of people fighting for your right to stay alive. South Africans are being hunted in their homes, on the roads and in their communities."
         path="/join"
       />
       <div className="flex flex-col min-h-screen">
       <div className="container mx-auto px-4 py-16">
         {/* Join Section */}
         <div className="max-w-4xl mx-auto">
-          <h1 className="mb-4">Join Civil Society SA</h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Join thousands of South Africans who want accountable governance and functioning services. 
-            Contributor registration is free — opt in for email and SMS updates.
+          <h1 className="mb-4">Join the growing safety net of people fighting for your right to stay alive</h1>
+          <p className="text-xl text-muted-foreground mb-4">
+            South Africans are being hunted in their homes, on the roads and in their communities.
           </p>
+          <p className="text-xl text-muted-foreground mb-12">
+            The state has collapsed. Citizens must take action.
+          </p>
+
+          <div className="mb-8 p-6 bg-secondary rounded-lg">
+            <h2 className="text-2xl mb-4">Join Civil Society South Africa to:</h2>
+            <ul className="space-y-2 text-lg">
+              <li>• Defend firearm rights</li>
+              <li>• Protect private security</li>
+              <li>• Demand Safety Tax Credits</li>
+              <li>• Fight anti-citizen legislation</li>
+            </ul>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form */}
             <div className="lg:col-span-2">
               <form onSubmit={handleSubmit} className="space-y-6 bg-card p-6 md:p-8 rounded-lg border border-border">
                 <div className="space-y-2">
-                  <h2 className="text-2xl font-bold">Sign up for updates</h2>
+                  <h2 className="text-2xl font-bold">Strengthen the safety net. Become a Contributor</h2>
                   <p className="text-muted-foreground">
                     Receive campaign updates and invitations to events.
                   </p>
