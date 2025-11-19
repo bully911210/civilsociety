@@ -34,47 +34,48 @@ export const CampaignPageLayout = ({
       />
       <div className="flex flex-col min-h-screen">
       {/* Hero */}
-      <section className="relative min-h-[400px] flex items-center justify-center bg-primary overflow-hidden">
+      <section className="relative flex items-center justify-center bg-primary overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${heroImage})`, aspectRatio: '16/9' }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary/85 to-primary-dark/95"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
-        <div className="relative container mx-auto px-4 md:px-6 py-16 md:py-20 text-center text-white z-10">
-          <h1 className="mb-6 max-w-4xl mx-auto">
+        <div className="relative container mx-auto px-4 md:px-6 pt-24 pb-16 text-center text-white z-10" style={{ maxWidth: '1200px' }}>
+          <h1 className="mb-0 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl mx-auto">
             {title}
           </h1>
         </div>
       </section>
 
-      <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-          {/* Content */}
-          <div className="lg:col-span-2 space-y-8">
+      <div className="container mx-auto px-4 md:px-6 py-16" style={{ maxWidth: '1200px' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Content - 8 columns */}
+          <div className="lg:col-span-8 space-y-8">
             {intro && (
               <section>
-                <p className="text-xl leading-relaxed text-foreground">
+                <p className="text-base md:text-lg leading-relaxed text-foreground" style={{ maxWidth: '65ch' }}>
                   {intro}
                 </p>
               </section>
             )}
             
-            <section>
-              <h2 className="text-3xl mb-4">The Problem</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {problemStatement}
-              </p>
-            </section>
+            {problemStatement && (
+              <section>
+                <p className="text-base text-muted-foreground leading-relaxed" style={{ maxWidth: '65ch' }}>
+                  {problemStatement}
+                </p>
+              </section>
+            )}
 
             <section>
-              <h2 className="text-3xl mb-6">What We Demand</h2>
+              <h2 className="text-4xl mb-6 font-bold">What We Demand</h2>
               <ul className="space-y-4">
                 {demands.map((demand, index) => (
                   <li key={index} className="flex items-start">
                     <span className="w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0"></span>
-                    <span className="text-lg text-muted-foreground">
+                    <span className="text-base text-muted-foreground" style={{ maxWidth: '65ch' }}>
                       <strong className="text-foreground">{demand.title}</strong> {demand.description}
                     </span>
                   </li>
@@ -85,9 +86,9 @@ export const CampaignPageLayout = ({
             <SocialShare campaignId={campaignId} campaignName={campaignName} />
           </div>
 
-          {/* Petition Form Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-24">
+          {/* Petition Form Sidebar - 4 columns */}
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-24">
               <PetitionForm campaignId={campaignId} campaignName={campaignName} />
             </div>
           </div>
