@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { CampaignCard } from "@/components/CampaignCard";
 import { SEO } from "@/components/SEO";
 import { Check } from "lucide-react";
-import propertyImage from "@/assets/campaigns/property.png";
-import safetyImage from "@/assets/campaigns/safety.png";
-import nonracialImage from "@/assets/campaigns/nonracial.png";
-import serviceImage from "@/assets/campaigns/service.png";
+import privateSecurityImage from "@/assets/campaigns/private-security.png";
+import selfDefenceImage from "@/assets/campaigns/self-defence.png";
+import taxCreditsImage from "@/assets/campaigns/tax-credits.png";
+import civilSocietyImage from "@/assets/campaigns/civil-society.png";
 
 const Home = () => {
   return (
@@ -64,32 +64,32 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <CampaignCard 
-              id="property-rights"
-              title="Property Rights"
-              excerpt="Protect small property owners and end arbitrary expropriation without compensation."
-              image={propertyImage}
-              imageAlt="Home with lock"
+              id="private-security"
+              title="Stop the Dangerous Private Security Restrictions"
+              excerpt="Protect Those Who Protect Us"
+              image={privateSecurityImage}
+              imageAlt="Legal Firearms Save Lives"
             />
             <CampaignCard 
-              id="safety-security"
-              title="Safety & Security"
-              excerpt="Make our streets safer and demand accountable policing and better community policing forums."
-              image={safetyImage}
-              imageAlt="Police presence in a neighbourhood"
+              id="self-defence"
+              title="Protect the Right to Self-Defence"
+              excerpt="Legal Firearms Save Lives"
+              image={selfDefenceImage}
+              imageAlt="Legal Firearms Save Lives"
             />
             <CampaignCard 
-              id="non-racialism"
-              title="Non-Racialism"
-              excerpt="Stand against divisive politics and protect equal treatment for all citizens."
-              image={nonracialImage}
-              imageAlt="Hands of different colours clasped"
+              id="tax-credits"
+              title="Support Safety Tax Credits"
+              excerpt="South Africans Should Not Be Punished for Protecting Themselves"
+              image={taxCreditsImage}
+              imageAlt="CSSA Safety Credits"
             />
             <CampaignCard 
-              id="service-delivery"
-              title="Service Delivery"
-              excerpt="Demand functioning services — water, electricity, and sanitation — from elected officials."
-              image={serviceImage}
-              imageAlt="Pothole-filled road"
+              id="civil-society"
+              title="Strengthen Civil Society"
+              excerpt="Hold Government Accountable Through Law, Oversight and Public Pressure"
+              image={civilSocietyImage}
+              imageAlt="Legal Firearms Save Lives"
             />
           </div>
         </div>
